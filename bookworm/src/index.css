@@ -1,0 +1,47 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'IBM Plex Sans', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --color-canvas: #161616;
+  --color-surface: #262626;
+  --color-surface-2: #393939;
+  --color-line: #393939;
+  --color-ink: #f4f4f4;
+  --color-muted: #c6c6c6;
+  --color-subtle: #8d8d8d;
+  --color-brand: #0f62fe;
+  --color-brand-hover: #0353e9;
+  --color-link: #78a9ff;
+  --color-danger: #ff8389;
+  --color-success: #42be65;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-canvas);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-ink);
+  outline-offset: 2px;
+}
+
+.payment-backdrop {
+  background-color: #17375a;
+  background-image:
+    radial-gradient(circle at 12% 20%, #1e4a78 0 14%, transparent 15%),
+    radial-gradient(circle at 88% 8%, #b9622e 0 7%, transparent 8%),
+    radial-gradient(circle at 20% 88%, #b8872f 0 9%, transparent 10%),
+    radial-gradient(circle at 82% 82%, #8a5a3a 0 11%, transparent 12%),
+    radial-gradient(circle at 70% 30%, #214f7c 0 8%, transparent 9%);
+}
